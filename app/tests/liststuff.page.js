@@ -16,7 +16,7 @@ class ListStuffPage {
   async hasTable(testController) {
     // This is first test to be run. Wait 10 seconds to avoid timeouts with GitHub Actions.
     const rowCount = Selector('tr').count;
-    await testController.wait(1000).expect(rowCount).gte(2);
+    await testController.wait(10000).expect(rowCount).gte(2);
   }
 }
 
